@@ -1,0 +1,45 @@
+from enum import Enum
+
+
+class AgentStatus(str, Enum):
+    OFFLINE = "OFFLINE"
+    AVAILABLE = "AVAILABLE"
+    RESERVED = "RESERVED"
+    DIALING = "DIALING"
+    CONNECTED = "CONNECTED"
+    WRAP_UP = "WRAP_UP"
+    PAUSED = "PAUSED"
+
+
+class BorrowerCallStatus(str, Enum):
+    UNPROCESSED = "UNPROCESSED"
+    CALLING = "CALLING"
+    CONNECTED = "CONNECTED"
+    COMPLETED = "COMPLETED"
+    FAILED = "FAILED"
+    DO_NOT_CALL = "DO_NOT_CALL"
+
+
+class CallStatus(str, Enum):
+    QUEUED = "QUEUED"
+    RESERVED = "RESERVED"
+    INITIATED = "INITIATED"
+    RINGING = "RINGING"
+    ANSWERED = "ANSWERED"
+    CONNECTED = "CONNECTED"
+    COMPLETED = "COMPLETED"
+    FAILED = "FAILED"
+    CANCELLED = "CANCELLED"
+
+
+class ProviderHealthStatus(str, Enum):
+    HEALTHY = "HEALTHY"
+    DEGRADED = "DEGRADED"
+    OUTAGE = "OUTAGE"
+
+
+class SafetyDecisionType(str, Enum):
+    APPROVED = "APPROVED"
+    REDUCED = "REDUCED"
+    REJECTED = "REJECTED"
+    FALLBACK_PROGRESSIVE = "FALLBACK_PROGRESSIVE"

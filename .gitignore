@@ -1,0 +1,47 @@
+# Python virtual environments & bytecode
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+.coverage
+htmlcov/
+
+# Databases
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+smart_dialer.db
+
+# Frontend node_modules & build output
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Environment variables & local secrets
+.env
+.env.local
+.env.*.local
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+node_modules/
+*.db
+dist/
